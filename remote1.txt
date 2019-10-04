@@ -1,5 +1,13 @@
-autossh
-cai jiji
+autossh -M 0 -q -f -N -o "ServerAliveInterval 60" -o "ServerAliveCountMax 3" -L xxxx:localhost:xxxx netid@remote1.ece.illinois.edu
+
+# Check for existing ssh key pair
+ls -al ~/.ssh/id_*.pub
+# Generate key
+ssh-keygen -t rsa -b 4096 -C 
+# Check generated key
+ls ~/.ssh/id_*
+# Copy key to the remote
+ssh-copy-id netid@remote1.ece.illinois.edu
 
 git add file (remote1.txt)
 
