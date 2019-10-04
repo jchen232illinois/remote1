@@ -1,5 +1,9 @@
+########### 设置autossh########### （本地机子）
 autossh -M 0 -q -f -N -o "ServerAliveInterval 60" -o "ServerAliveCountMax 3" -L xxxx:localhost:xxxx netid@remote1.ece.illinois.edu
+#################################   
 
+
+########### 设置passwordless ssh ########### （本子机子）
 # Check for existing ssh key pair
 ls -al ~/.ssh/id_*.pub
 # Generate key
@@ -8,11 +12,15 @@ ssh-keygen -t rsa -b 4096 -C
 ls ~/.ssh/id_*
 # Copy key to the remote
 ssh-copy-id netid@remote1.ece.illinois.edu
+########### ########### ########### 
+
+
+##############jupyter notebook 服务器建立###################  （服务器机子）
+jupyter notebook --no-browser --port xxxx
+########### ########### ########### ########### ########### 
 
 git add file (remote1.txt)
 
 git comit -m "2323"
 
 git push 
-jchen232illinois
-password
