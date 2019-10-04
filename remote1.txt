@@ -1,2 +1,10 @@
 autossh
 cai jiji
+
+git add file (remote1.txt)
+
+git comit -m "2323"
+
+git push 
+jchen232illinois
+password
