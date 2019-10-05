@@ -1,2 +1,2 @@
 # remote1
-remote1 server
+Here is the method to access remote1 server
