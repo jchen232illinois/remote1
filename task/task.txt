@@ -1,6 +1,19 @@
-You should check out this repo from github, then copy it to remote server.
-then you should de-compress the 7z file. This contains the array you will work on
+The task's main purpose is to let you go through the whole process.
 
-Then create a new jupyter notebook, read the file
-You are given a compressed file, arr.7z
+The goal is to get the image from the numpy array (arr.npy) file.
 
+Detailed description is shown below:
+
+	1. You should check out this repo from github, then extract the arr.7z file to get the arr.npy file. 
+
+	2. Then you should copy the arr.npy file to the remote1 server. This contains the array you will work on.
+
+	3. Then create a new jupyter notebook on the remote1 server, read the file, apply the necessary operations to the array.
+
+	4. You should save the image, on your local disk, and decide whether they are legible images.
+
+	5. If everything looks good, comment on the image content, for example, whether you like or dislike that.
+
+Data structure of arr.npy:
+
+	When you read the file using proper function in numpy library, you will get a 4 dimensional array. The first index correspond to the order of image, for example, arr[0] is the first image array and arr[2] is the third one. While the rest dimensions are the image data, i.e., arr[0] is a 3 dimensional array which the first and second index is the pixel data, while the last index is the channel for RGB color.
