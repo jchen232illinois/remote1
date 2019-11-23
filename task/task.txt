@@ -1,0 +1,6 @@
+You should check out this repo from github, then copy it to remote server.
+then you should de-compress the 7z file. This contains the array you will work on
+
+Then create a new jupyter notebook, read the file
+You are given a compressed file, arr.7z
+
