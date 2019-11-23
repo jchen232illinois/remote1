@@ -17,3 +17,5 @@ Detailed description is shown below:
 Data structure of arr.npy:
 
 	When you read the file using proper function in numpy library, you will get a 4 dimensional array. The first index correspond to the order of image, for example, arr[0] is the first image array and arr[2] is the third one. While the rest dimensions are the image data, i.e., arr[0] is a 3 dimensional array which the first and second index is the pixel data, while the last index is the channel for RGB color.
+
+	In addition, every pixel in the image data is multiplied by 32, you need to revert that for legibly displaying of image.
