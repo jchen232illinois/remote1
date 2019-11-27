@@ -3,7 +3,7 @@ autossh -M 0 -q -f -N -o "ServerAliveInterval 60" -o "ServerAliveCountMax 3" -L 
 #################################   
 
 ####################zack web
-http://localhost:9876/?token=b9d3fc83c633c657513f6bca9d80409a0ec97f5adf6fc988
+http://localhost:9876/?token=93f93fbd69ae1f13f4e5ddef66d7051cf87ef58bf9297009
 
 ########### 设置passwordless ssh ########### （本子机子）
 # Check for existing ssh key pair
